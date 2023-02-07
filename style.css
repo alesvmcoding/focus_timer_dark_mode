@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+
+    position: relative;
+
+    background-color: 
+    #FFFFFF;
+    color: #323238;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    justify-self: center;
+    align-self: center;
+}
+
+.wrapper{
+    display: flex;
+    gap: 19.2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.timerDisplay{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+
+    margin-bottom: 4.8rem;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.controls{
+    display: flex;
+    gap: 4rem;
+
+    width: 4.8rem;
+    height: 4.8rem;
+
+    align-items: center;
+    justify-items: center;
+
+    transition: transform .2s;
+}
+
+.controls button:hover{
+    transform: scale(1.1);
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3.2rem;
+
+    align-items: center;
+    justify-items: center;
+
+    width: 30.8rem;
+    height: 33.6rem
+}
+
+.card{
+    width: 13.8rem;
+    height: 15.2rem;
+
+    background: #E1E1E6;
+    border-radius: 2.4rem;
+
+    transition: transform .2s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.select{
+    background-color: #02799D;
+}
+
+.select svg path{
+    fill: white;
+}
+
+.hide{
+    display: none;
+}
+
+.dark-mode{
+    position: absolute;
+    top: 6.0rem;
+    right: 6.0rem;
+}
+
+.dark{
+    background-color: 
+    #121214;
+    color: #FFFFFF;
+}
+
+.dark .card{
+    background: #29292E;
+}
+
+.dark svg path{
+    fill: #C4C4CC;
+} 
+
+.dark .select svg path{
+    fill: white;
+}
+
+.dark .select{
+    background-color: #02799D;
+}
+
+/*Input Range*/
+
+[type=range]{
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 9.0rem;
+    height: 0.4rem;
+    margin-top: 3.2rem;
+
+    border-radius: 0.5rem;
+    background-color: #323238;
+
+    outline: none;
+}
+
+[type=range]::-webkit-slider-thumb{
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: #323238;
+}
+
+[type=range]::-moz-range-thumb{
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: #323238;
+}
+
+.select [type=range]{
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 9.0rem;
+    height: 0.4rem;
+    margin-top: 3.2rem;
+
+    border-radius: 0.5rem;
+    background-color: white;
+
+    outline: none;
+}
+
+.select [type=range]::-webkit-slider-thumb{
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.select [type=range]::-moz-range-thumb{
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.dark [type=range]{
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 9.0rem;
+    height: 0.4rem;
+    margin-top: 3.2rem;
+
+    border-radius: 0.5rem;
+    background-color: white;
+
+    outline: none;
+}
+
+.dark [type=range]::-webkit-slider-thumb{
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.dark [type=range]::-moz-range-thumb{
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: white;
+}
